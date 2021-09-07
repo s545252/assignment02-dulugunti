@@ -35,3 +35,10 @@ The following table shows the list of my favourite food/drinks at location avail
 | Frankies | Hyderbad | 4 |
 | Hazeelnut thikshake| Karimnagar | 5|
 |Shawharma | Karimnagar | 6 |
+
+---
+
+# Quotes:
+> Believe in you and the rest will too. - *Madhu*
+
+> Everything in the world is hyped. Don't fall for it and live your life a certain way to prove a point that doesn't exist. - *Manasa*
