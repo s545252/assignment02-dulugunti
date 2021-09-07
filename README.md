@@ -6,6 +6,7 @@
 
 ---
 ## Summer Trip
+
 1. Directions from Maryville city to Los Angeles
     1. With car drive should go through Oklahoma city for 8 hours from start place.
     2. After overnight stay drive to kingman city for next 5 hours.
@@ -22,3 +23,15 @@
     * Business Cards
 
 [AboutMe](https://github.com/s545252/assignment02-dulugunti/blob/main/AboutMe.md)
+
+---
+# My Favourite Food/Drinks
+
+The following table shows the list of my favourite food/drinks at location available.
+
+| **Food/drinks**          | **Location** | **Cost(dollar)**|
+|:----------------:| :------------: | :------: |
+| Shrimps Biryani   | Hyderabad | 10 |
+| Frankies | Hyderbad | 4 |
+| Hazeelnut thikshake| Karimnagar | 5|
+|Shawharma | Karimnagar | 6 |
