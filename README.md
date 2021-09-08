@@ -49,15 +49,8 @@ The following table shows the list of my favourite food/drinks at location avail
 
 Dynamic programming is both a mathematical optimization method and a computer programming method. The method was developed by Richard Bellman in the 1950s and has found applications in numerous fields, from aerospace engineering to economics.
 Given an quick-link to the source <https://en.wikipedia.org/wiki/Dynamic_programming>
-```
-```
-## Numerical linear algebra 
-```
-Numerical linear algebra, sometimes called applied linear algebra, is the study of how matrix operations can be used to create computer algorithms which efficiently and accurately provide approximate answers to questions in continuous mathematics. It is a subfield of numerical analysis, and a type of linear algebra.
-Given an quick-link to the source <https://en.wikipedia.org/wiki/Numerical_linear_algebra>
-```
 
-
+```
 int m, n;
 vector<long long> dp_before(n), dp_cur(n);
 
@@ -93,3 +86,6 @@ int solve() {
 
     return dp_before[n - 1];
 }
+```
+
+<https://cp-algorithms.com/dynamic_programming/divide-and-conquer-dp.html>
