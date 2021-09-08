@@ -42,3 +42,54 @@ The following table shows the list of my favourite food/drinks at location avail
 > Believe in you and the rest will too. - *Madhu*
 
 > Everything in the world is hyped. Don't fall for it and live your life a certain way to prove a point that doesn't exist. - *Manasa*
+
+----
+# Code Fencing
+## Dynamic programming
+
+Dynamic programming is both a mathematical optimization method and a computer programming method. The method was developed by Richard Bellman in the 1950s and has found applications in numerous fields, from aerospace engineering to economics.
+Given an quick-link to the source <https://en.wikipedia.org/wiki/Dynamic_programming>
+```
+```
+## Numerical linear algebra 
+```
+Numerical linear algebra, sometimes called applied linear algebra, is the study of how matrix operations can be used to create computer algorithms which efficiently and accurately provide approximate answers to questions in continuous mathematics. It is a subfield of numerical analysis, and a type of linear algebra.
+Given an quick-link to the source <https://en.wikipedia.org/wiki/Numerical_linear_algebra>
+```
+
+
+int m, n;
+vector<long long> dp_before(n), dp_cur(n);
+
+long long C(int i, int j);
+
+// compute dp_cur[l], ... dp_cur[r] (inclusive)
+void compute(int l, int r, int optl, int optr) {
+    if (l > r)
+        return;
+
+    int mid = (l + r) >> 1;
+    pair<long long, int> best = {LLONG_MAX, -1};
+
+    for (int k = optl; k <= min(mid, optr); k++) {
+        best = min(best, {(k ? dp_before[k - 1] : 0) + C(k, mid), k});
+    }
+
+    dp_cur[mid] = best.first;
+    int opt = best.second;
+
+    compute(l, mid - 1, optl, opt);
+    compute(mid + 1, r, opt, optr);
+}
+
+int solve() {
+    for (int i = 0; i < n; i++)
+        dp_before[i] = C(0, i);
+
+    for (int i = 1; i < m; i++) {
+        compute(0, n - 1, 0, n - 1);
+        dp_before = dp_cur;
+    }
+
+    return dp_before[n - 1];
+}
